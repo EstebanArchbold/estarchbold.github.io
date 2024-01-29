@@ -1,0 +1,119 @@
+<!-- Name: Esteban Archbold
+            Osvaldo Guerrero
+Id: 100904750,
+Date: Jan 27th, 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="Content/app.css">
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-building"></i> Harmony Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-left mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="portfolio.html"> <i class="fa-solid fa-diagram-project"></i>Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="service.html"> <i class="fa-solid fa-briefcase"></i>Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html"> <i class="fa-solid fa-address-card"></i>Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html"> <i class="fa-solid fa-phone"></i>Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="container">
+     <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+         <div class="col-md-6 px-0">
+             <h1 class="display-4 fst-italic">Tech Hive</h1>
+             <p class="lead my-3">In this blog you can see the news about technology</p>
+             <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+         </div>
+     </div>
+     <div class="row g-5">
+         <div class="col-md-8">
+             <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                 From the Firehose
+             </h3>
+
+             <article class="blog-post">
+                 <h2 class="blog-post-title">Nightshade, the tool that ‘poisons’ data, gives artists a fighting chance against A</h2>
+                 <p class="blog-post-meta">January 26, 2024 <a href="https://techcrunch.com/2024/01/26/nightshade-the-tool-that-poisons-data-gives-artists-a-fighting-chance-against-ai/">Morgan Sung</a></p>
+
+                 <p>It's like 'putting hot sauce in your lunch so it doesn't get stolen from the workplace fridge.'</p>
+                 <hr>
+                 <p>Intentionally poisoning someone else is never morally right. But if someone in the office keeps swiping your lunch, wouldn’t you resort to petty vengeance?
+                     For artists, protecting work from being used to train AI models without consent is an uphill battle. Opt-out requests and do-not-scrape codes rely on AI companies to engage in good faith, but those motivated by profit
+                     over privacy can easily disregard such measures. Sequestering themselves offline isn’t an option for most artists, who rely on social media exposure for commissions and other work opportunities.
+                 </p>
+                 <p>TNightshade, a project from the University of Chicago, gives artists some recourse by “poisoning” image data, rendering it useless or disruptive to AI model training. Ben Zhao, a computer science professor who led the project, compared Nightshade to “putting hot sauce in your lunch so it doesn’t get stolen from the workplace fridge.” </p>
+             </article>
+         </div>
+
+<!--         Sidebar                                   -->
+         <div class="col-md-4">
+             <div class="position-sticky" style="top: 2rem;">
+                 <div class="p-4 mb-3 bg-light rounded">
+                     <h4 class="fst-italic">About</h4>
+                     <p class="mb-0">Here you can see all the news about technology and software development stay tuned and uptodate about everything that is happening right now in the world</p>
+                 </div>
+
+                 <div class="p-4">
+                     <h4 class="fst-italic">Archives</h4>
+                     <ol class="list-unstyled mb-0">
+                         <li><a href="#">March 2021</a></li>
+                         <li><a href="#">February 2021</a></li>
+                         <li><a href="#">January 2021</a></li>
+                         <li><a href="#">December 2020</a></li>
+                         <li><a href="#">November 2020</a></li>
+                     </ol>
+                 </div>
+
+                 <div class="p-4">
+                     <h4 class="fst-italic">Social Media</h4>
+                     <ol class="list-unstyled">
+                         <li><a href="https://github.com/">GitHub Esteban</a></li>
+                         <li><a href="https://github.com/">GitHub Osvaldo</a></li>
+                         <li><a href="#">Twitter</a></li>
+                         <li><a href="#">Facebook</a></li>
+                     </ol>
+                 </div>
+             </div>
+         </div>
+
+     </div>
+
+ </main>
+
+<!-- Scripting Section -->
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./Scripts/app.js"></script>
+<script src="./Scripts/contact.js"></script>
+</body>
+</html>
