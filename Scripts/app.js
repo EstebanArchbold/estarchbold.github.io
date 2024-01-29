@@ -128,9 +128,9 @@
         // Set inner HTML content with your provided footer
         footer.innerHTML = `
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="../privacy.html" class="nav-link px-2 text-muted">Privacy Policy</a></li>
-                <li class="nav-item"><a href="../termofservice.html" class="nav-link px-2 text-muted">Term Of Service</a></li>
-                <li class="nav-item"><a href="../contactus.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+                <li class="nav-item"><a href="../estarchbold.github.io/privacy.html" class="nav-link px-2 text-muted">Privacy Policy</a></li>
+                <li class="nav-item"><a href="../estarchbold.github.io/termofservice.html" class="nav-link px-2 text-muted">Term Of Service</a></li>
+                <li class="nav-item"><a href="../estarchbold.github.io/contactus.html" class="nav-link px-2 text-muted">Contact Us</a></li>
             </ul>
             <p class="text-center text-muted">© 2024 Harmony HUB</p>
             <p class="text-center text-muted">by Esteban Archbold and Osvaldo Guerrero</p>
