@@ -1,0 +1,3 @@
+"views strict";
+
+let core;
