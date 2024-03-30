@@ -1,0 +1,20 @@
+<div class="container">
+    <section id="proposed-events" class="section">
+        <h2 class="section-title">Propose a New Event</h2>
+        <!-- Form for proposing a new event -->
+        <form id="event-form" class="event-form">
+            <!-- Input fields for event details -->
+            <label for="event-name" class="label">Event Name:</label>
+            <input type="text" id="event-name" name="eventname" class="input" required>
+
+            <label for="event-date" class="label">Event Date:</label>
+            <input type="text" id="event-date" name="eventdate" class="input" required>
+
+            <label for="event-description" class="label">Event Description:</label>
+            <input type="text" id="event-description" name="eventdescription" class="input" required>
+
+            <button id="editeventButton" type="submit" class="btn btn-primary"><i class="fas fa-edit fa-lg"></i> Edit</button>
+            <button id="cancelEventButton" type="reset" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</button>
+        </form>
+    </section>
+</div>
