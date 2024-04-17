@@ -1,0 +1,61 @@
+<div class="container">
+    <h1>Harmony Hub Visitor Statistics</h1>
+    <div>
+        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+    </div>
+
+    <!-- Script to fetch data and render charts -->
+</div>
+<script>
+    fetch('data/statistics.json')
+        .then(response => response.json())
+        .then(data => {
+            const dates = data.date;
+            const visitors = data.visitors;
+            const pageViews = data.pageViews;
+            const uniqueVisitors = data.uniqueVisitors;
+
+            // Render chart using Chart.js
+            new Chart("myChart", {
+                type: "line",
+                data: {
+                    labels: dates,
+                    datasets: [
+                        {
+                            label: 'Visitors',
+                            data: visitors,
+                            backgroundColor: "rgba(0, 0, 255, 0.2)",
+                            borderColor: "rgba(0, 0, 255, 1)",
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Page Views',
+                            data: pageViews,
+                            backgroundColor: "rgba(255, 0, 0, 0.2)",
+                            borderColor: "rgba(255, 0, 0, 1)",
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Unique Visitors',
+                            data: uniqueVisitors,
+                            backgroundColor: "rgba(0, 255, 0, 0.2)",
+                            borderColor: "rgba(0, 255, 0, 1)",
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching or parsing data:', error);
+        });
+</script>
